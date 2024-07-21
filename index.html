@@ -3,127 +3,120 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Aarchi Vyas">
         <meta name="description" content="The official website for J.K. Fastfood">
         <title>J.K. Fastfood</title>
         <link rel="icon" href="vadapav.png" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
+        <script src="js/main.js" defer></script>
     </head>
+
     <body>
-        <header>
-            <h1>Welcome to J.K. Fastfood</h1>
-            <nav>
-                <ul>
+        <header class="header">
+            <h1 class="header__h1">J.K. Fastfood</h1>
+            <nav class="header__nav">
+                <ul class="header__ul">
                     <li>
-                        <a href="#aboutjkf">About <abbr title="J.K. Fastfood">JKF</abbr></a>
+                        <a href="#menu">Menu</a>
                     </li>
                     <li>
-                        <a href="#menu">Our Menu</a>
+                        <a href="hours.html">Hours</a>
                     </li>
                     <li>
-                        <a href="hours.html">Store Hours</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="about.html">About</a>
                     </li>
                 </ul>
             </nav>
+        </header>
 
+        <section class="hero">
+            <h2 class="hero__h2">Welcome!</h2>
             <figure>
-                <img src="vadapav.jpg" alt="Samosa and Vadapav" title="We love Vadapav!" width="300" height="300">
-                <figcaption>
+                <img src="vadapav.jpg" alt="Samosa and Vadapav" title="We love Vadapav!" width="736" height="736">
+                <figcaption class="offscreen">
                     Samosa and Vadapav
                 </figcaption>
             </figure>
-        </header>
-        <hr>
-        <main>
-            <article id="about">
-                <h2>About <abbr title="J.K Fastfood">JKF</abbr></h2>
-                <p>
-                    <abbr title="J.K Fastfood">JKF</abbr> was founded in <time datetime="2017">2017</time>. Our shop was built from the <strong>craze of vadapavs</strong>🍔🍔🍔 in the citizens of Valsad. We hope we get successful in serving our customers while providing great services.
-                </p>
-                <aside>
-                    <h3>Vadapav Trivia</h3>
-                    <details>
-                        <summary>When did vadapavs first appear in India?</summary>
-                        <p>
-                            The most common theory of the vada pav's origin is that it was invented in the erstwhile mill-heartland of Central Mumbai. Ashok Vaidya of Dadar is often credited with starting the first vada pav stall outside Dadar railway station in <time datetime="1966">1966</time>.
-                            (Source: <cite><a href="https://en.wikipedia.org/wiki/Vada_pav" target="_blank">Wikipedia</a></cite>)  
-                        </p>
-                    </details>
-                </aside>
-            </article>
-            <hr>
-            <article id="menu">
-                <h2>Our Menu</h2>
-                <table>
-                    <caption>Our Vadapavs</caption>
+        </section>
+
+        <main class="main">
+
+            <article id="menu" class="main__article menu">
+                <h2 class="menu__h2">Our Menu</h2>
+                <table class="menu__container">
+                    <caption class="offscreen">Our Vadapavs</caption>
                     <thead>
                         <tr>
-                            <th>Vadapavs</th>
-                            <th scope="col"><abbr title="Quantity">Qty</abbr></th>
-                            <th scope="col">Price</th>
+                            <th class="menu__header" scope="col">Vadapavs</th>
+                            <th class="menu__header" scope="col">Quantity</th>
+                            <th class="menu__header" scope="col">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" rowspan="3">Cheese</th>
-                            <td>1</td>
-                            <td>Rs. 30</td>
+                            <th class="menu__item menu__ch" scope="row" rowspan="3">Cheese</th>
+                            <td class="menu__item">1</td>
+                            <td class="menu__item">Rs. 30</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>Rs. 60</td>
+                            <td class="menu__item">2</td>
+                            <td class="menu__item">Rs. 60</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>Rs. 90</td>
+                            <td class="menu__item">3</td>
+                            <td class="menu__item">Rs. 90</td>
                         </tr>
                         <tr>
-                            <th scope="row" rowspan="3">Mayonnaise</th>
-                            <td>1</td>
-                            <td>Rs. 40</td>
+                            <th class="menu__item menu__ma" scope="row" rowspan="3">Mayonnaise</th>
+                            <td class="menu__item">1</td>
+                            <td class="menu__item">Rs. 40</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>Rs. 80</td>
+                            <td class="menu__item">2</td>
+                            <td class="menu__item">Rs. 80</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>Rs. 120</td>
+                            <td class="menu__item">3</td>
+                            <td class="menu__item">Rs. 120</td>
                         </tr>
                         <tr>
-                            <th scope="row" rowspan="3">Schezwan</th>
-                            <td>1</td>
-                            <td>Rs. 45</td>
+                            <th class="menu__item menu__sc" scope="row" rowspan="3">Schezwan</th>
+                            <td class="menu__item">1</td>
+                            <td class="menu__item">Rs. 45</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>Rs. 90</td>
+                            <td class="menu__item">2</td>
+                            <td class="menu__item">Rs. 90</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>Rs. 135</td>
+                            <td class="menu__item">3</td>
+                            <td class="menu__item">Rs. 135</td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="3">
-                                Samosa &amp; Chutney Rs. 20 
+                            <td class="menu__item menu__sam" colspan="3">
+                                Samosa &amp; Chutney Rs. 30 
                             </td>
                         </tr>
                     </tfoot>
                 </table>
-                <br>
-                <p>
+                
+                <p class="center">
                     <a href="#">Back To Top</a>
                 </p>
             </article>
         </main>
         <hr>
-        <footer>
-            <p>Copyright &copy; J.K. Fastfood</p>
+        <footer class="footer">
+            <p>
+                <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+                <span class="nowrap">J.K. Fastfood</span> 
+            </p>
         </footer>
     </body>
 </html>
